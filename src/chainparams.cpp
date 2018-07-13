@@ -135,8 +135,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x8f991f41bb8c6ba2b4af9d71a23df0c4a8dfb9a8edf004069b65fa624ce2b8f1"));
 
         // DNS Seeding
-        vSeeds.push_back(CDNSSeedData("167.99.171.144", "167.99.171.144"));
-        vSeeds.push_back(CDNSSeedData("206.189.160.179", "206.189.160.179"));
+        vSeeds.push_back(CDNSSeedData("178.128.1.74", "178.128.1.74"));
+        vSeeds.push_back(CDNSSeedData("165.227.62.111", "165.227.62.111"));
 
         // APR coin addresses start with 'G'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 12);
