@@ -105,9 +105,9 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 2 * 60; // APR coin: 2 minutes
-        nTargetSpacing = 2 * 60;  // APR coin: 2 minutes
-        nMaturity = 15;
+        nTargetTimespan = 1 * 30; // APR coin: 2 minutes
+        nTargetSpacing = 1 * 30;  // APR coin: 2 minutes
+        nMaturity = 6;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 25000000 * COIN;
 
