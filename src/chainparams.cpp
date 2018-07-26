@@ -183,12 +183,12 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x70cff1fc2ed81c547c0baeb5f63269739ddef46d38962fee643fdc53aa4ed856"));
 
         // DNS Seeding
-        vSeeds.push_back(CDNSSeedData("1", "178.128.145.147"));
-        vSeeds.push_back(CDNSSeedData("2", "167.99.45.10"));
-        vSeeds.push_back(CDNSSeedData("3", "139.59.74.84"));
-        vSeeds.push_back(CDNSSeedData("4", "206.189.58.59"));
-        vSeeds.push_back(CDNSSeedData("5", "178.128.194.194"));
-        vSeeds.push_back(CDNSSeedData("6", "206.189.126.13"));
+        vSeeds.push_back(CDNSSeedData("1", "178.128.5.47"));
+        vSeeds.push_back(CDNSSeedData("2", "142.93.6.205"));
+        // vSeeds.push_back(CDNSSeedData("3", "139.59.74.84"));
+        // vSeeds.push_back(CDNSSeedData("4", "206.189.58.59"));
+        // vSeeds.push_back(CDNSSeedData("5", "178.128.194.194"));
+        // vSeeds.push_back(CDNSSeedData("6", "206.189.126.13"));
 
         // 401K coin addresses start with 'K'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 45);
