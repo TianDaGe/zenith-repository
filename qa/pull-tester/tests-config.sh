@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-BUILDDIR="/home/osboxes/blockchain/zenith-repository"
+BUILDDIR="/Volumes/D/401k/zenith-repository"
 EXEEXT=""
 
 # These will turn into comments if they were disabled when configuring.

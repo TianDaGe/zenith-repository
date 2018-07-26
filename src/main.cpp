@@ -77,7 +77,7 @@ bool fCheckBlockIndex = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 5 * 60;
+unsigned int nStakeMinAge = 60 * 60;
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in uapr) are considered zero fee (for relaying and mining)
@@ -1623,16 +1623,16 @@ int64_t GetBlockValue(int nHeight)
             return 50000 * COIN;
     }
 
-    if (nHeight < Params().LAST_POW_BLOCK())
+ if (nHeight < Params().LAST_POW_BLOCK())
         nSubsidy = 15000 * COIN;
     else if (nHeight <= 5000)
         nSubsidy = 1 * COIN;
     else if (nHeight > 5000 && nHeight <= 25000)
-        nSubsidy = 33 * COIN;
+        nSubsidy = 80 * COIN;
     else if (nHeight > 25000 && nHeight <= 100000)
-        nSubsidy = 20 * COIN;
+        nSubsidy = 60 * COIN;
     else if (nHeight > 100000 && nHeight <= 1100000)
-        nSubsidy = 10 * COIN;
+        nSubsidy = 30 * COIN;
     else
         nSubsidy = 1.25 * COIN;
 

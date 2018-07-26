@@ -203,10 +203,10 @@ QT_TRANSLATE_NOOP("aprcoin-core", ""
 QT_TRANSLATE_NOOP("aprcoin-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("aprcoin-core", "(3133 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("aprcoin-core", "(5502 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("aprcoin-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("aprcoin-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("aprcoin-core", "(must be 3133 for mainnet)"),
+QT_TRANSLATE_NOOP("aprcoin-core", "(must be 5502 for mainnet)"),
 QT_TRANSLATE_NOOP("aprcoin-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("aprcoin-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("aprcoin-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
