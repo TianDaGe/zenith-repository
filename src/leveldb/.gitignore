@@ -1,5 +1,4 @@
 build_config.mk
-*.a
 *.o
 *.dylib*
 *.so
@@ -11,4 +10,3 @@ Release
 Debug
 Benchmark
 vs2010.*
-!Makefile
