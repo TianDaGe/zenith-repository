@@ -137,11 +137,7 @@ src/univalue/build-aux/depcomp
 src/univalue/build-aux/install-sh
 src/univalue/build-aux/ltmain.sh
 src/univalue/build-aux/missing
-<<<<<<< HEAD
-src/univalue/build-aux/test-driver
-=======
 src/univalue/build-aux/test-driver
 
 !libleveldb.a
 !libmemenv.a
->>>>>>> f7ef23e91329d2f3fad4c8b8c7d882339b206930
