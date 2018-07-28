@@ -10,11 +10,11 @@ SetCompressor /SOLID lzma
 !define URL https://www.apr-coin.com
 
 # MUI Symbol Definitions
-!define MUI_ICON "/Volumes/D/401k/zenith-repository/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/Volumes/D/401k/zenith-repository/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/osboxes/blockchain/zenith-repository/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/osboxes/blockchain/zenith-repository/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/Volumes/D/401k/zenith-repository/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/osboxes/blockchain/zenith-repository/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "APR Coin Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\aprcoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/Volumes/D/401k/zenith-repository/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/osboxes/blockchain/zenith-repository/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /Volumes/D/401k/zenith-repository/aprcoin-${VERSION}-win-setup.exe
+OutFile /home/osboxes/blockchain/zenith-repository/aprcoin-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\AprCoin
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /Volumes/D/401k/zenith-repository/release/aprcoin-qt
-    File /oname=COPYING.txt /Volumes/D/401k/zenith-repository/COPYING
-    File /oname=readme.txt /Volumes/D/401k/zenith-repository/doc/README_windows.txt
+    File /home/osboxes/blockchain/zenith-repository/release/aprcoin-qt
+    File /oname=COPYING.txt /home/osboxes/blockchain/zenith-repository/COPYING
+    File /oname=readme.txt /home/osboxes/blockchain/zenith-repository/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /Volumes/D/401k/zenith-repository/release/aprcoind
-    File /Volumes/D/401k/zenith-repository/release/aprcoin-cli
+    File /home/osboxes/blockchain/zenith-repository/release/aprcoind
+    File /home/osboxes/blockchain/zenith-repository/release/aprcoin-cli
     SetOutPath $INSTDIR\doc
-    File /r /Volumes/D/401k/zenith-repository/doc\*.*
+    File /r /home/osboxes/blockchain/zenith-repository/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
